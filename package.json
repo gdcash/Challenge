@@ -1,8 +1,10 @@
 {
-  "name": "interview-challenge",
+  "name": "fe-technical-interview",
   "version": "1.0.0",
-  "description": "React Native for Web starter template",
-  "keywords": [],
+  "description": "",
+  "keywords": [
+    "interview"
+  ],
   "main": "src/index.js",
   "dependencies": {
     "lodash": "4.17.21",
