@@ -6,6 +6,7 @@
 // Ask questions as necessary and feel free to look up things on Google.
 // Don't worry about perfect styling or finishing the entire exercise before time expires.
 import React, { useState, useEffect } from "react";
+import digitalServices from "./service/digitalServices";
 
 // DOCS: https://reactnative.dev/docs/components-and-apis
 import {
@@ -18,6 +19,12 @@ import {
 } from "react-native";
 
 const App = () => {
+  useEffect(() => {
+    digitalServices().then((data) => {
+      console.log(data);
+    });
+  }, []);
+
   return (
     <View>
       <Text>Hola Cash</Text>
