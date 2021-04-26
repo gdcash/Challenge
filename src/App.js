@@ -5,15 +5,24 @@
 // Within the API response you can find the images for each icon, as well as all of the properties/labels necessary to complete the page.
 // Ask questions as necessary and feel free to look up things on Google.
 // Don't worry about perfect styling or finishing the entire exercise before time expires.
-import React from "react";
-import { View } from "react-native";
-import { Provider } from "react-redux";
-import store from "./Redux";
-import getDigitalService from "./service/digitalServices";
+import React, { useState, useEffect } from "react";
+
+// DOCS: https://reactnative.dev/docs/components-and-apis
+import {
+  View,
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  FlatList
+} from "react-native";
 
 const App = () => {
-  getDigitalService().then((res) => console.log(res));
-  return <>Hola Cash 💰</>;
+  return (
+    <View>
+      <Text>Hola Cash</Text>
+    </View>
+  );
 };
 
 export default App;
